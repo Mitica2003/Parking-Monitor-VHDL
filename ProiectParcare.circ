@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="3.8.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#TTL" name="6"/>
+  <lib desc="#TCL" name="7"/>
+  <lib desc="#Base" name="8"/>
+  <lib desc="#BFH-Praktika" name="9"/>
+  <lib desc="#Input/Output-Extra" name="10"/>
+  <lib desc="#Soc" name="11"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="8" map="Button2" name="Poke Tool"/>
+    <tool lib="8" map="Button3" name="Menu Tool"/>
+    <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="8" name="Poke Tool"/>
+    <tool lib="8" name="Edit Tool"/>
+    <tool lib="8" name="Wiring Tool"/>
+    <tool lib="8" name="Text Tool"/>
+    <sep/>
+    <tool lib="0" name="Pin"/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <sep/>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+    <tool lib="1" name="XOR Gate"/>
+    <tool lib="1" name="NAND Gate"/>
+    <tool lib="1" name="NOR Gate"/>
+    <sep/>
+    <tool lib="4" name="D Flip-Flop"/>
+    <tool lib="4" name="Register"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="main"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="64.0"/>
+    <comp lib="0" loc="(40,220)" name="Clock">
+      <a name="facing" val="north"/>
+      <a name="label" val="Clk"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="0" loc="(540,290)" name="Splitter">
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="5" loc="(1260,520)" name="7-Segment Display"/>
+    <comp lib="5" loc="(1320,520)" name="7-Segment Display"/>
+    <comp lib="5" loc="(160,1010)" name="DipSwitch">
+      <a name="facing" val="east"/>
+      <a name="label" val="Senzors"/>
+      <a name="labelfont" val="SansSerif bold 20"/>
+      <a name="labelloc" val="south"/>
+    </comp>
+    <comp lib="5" loc="(410,230)" name="LED">
+      <a name="color" val="#10f000"/>
+      <a name="label" val="Parking_in"/>
+      <a name="offcolor" val="#ff0c00"/>
+    </comp>
+    <comp lib="5" loc="(410,290)" name="LED">
+      <a name="color" val="#10f000"/>
+      <a name="label" val="Parking_out"/>
+      <a name="offcolor" val="#ff0c00"/>
+    </comp>
+    <comp lib="5" loc="(450,80)" name="LED">
+      <a name="color" val="#10f000"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="Full"/>
+      <a name="labelloc" val="north"/>
+      <a name="offcolor" val="#ff0c00"/>
+    </comp>
+    <comp lib="5" loc="(50,170)" name="Button">
+      <a name="label" val="Reset"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="5" loc="(520,80)" name="LED">
+      <a name="color" val="#10f000"/>
+      <a name="facing" val="south"/>
+      <a name="label" val="Empty"/>
+      <a name="labelloc" val="north"/>
+      <a name="offcolor" val="#ff0c00"/>
+    </comp>
+    <comp lib="8" loc="(1500,570)" name="Text">
+      <a name="text" val="Afisor parcare"/>
+    </comp>
+    <comp loc="(1130,320)" name="ssd">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(1130,660)" name="ssd">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(380,170)" name="Unitate_de_control">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(560,390)" name="Intrare1">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(560,530)" name="Intrare2">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(560,670)" name="Iesire1">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(560,810)" name="Iesire2">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <wire from="(110,190)" to="(110,410)"/>
+    <wire from="(110,190)" to="(160,190)"/>
+    <wire from="(110,410)" to="(110,550)"/>
+    <wire from="(110,410)" to="(340,410)"/>
+    <wire from="(110,550)" to="(110,690)"/>
+    <wire from="(110,550)" to="(340,550)"/>
+    <wire from="(110,690)" to="(110,830)"/>
+    <wire from="(110,690)" to="(340,690)"/>
+    <wire from="(110,830)" to="(340,830)"/>
+    <wire from="(1130,320)" to="(1280,320)"/>
+    <wire from="(1130,340)" to="(1290,340)"/>
+    <wire from="(1130,360)" to="(1240,360)"/>
+    <wire from="(1130,380)" to="(1230,380)"/>
+    <wire from="(1130,400)" to="(1220,400)"/>
+    <wire from="(1130,420)" to="(1270,420)"/>
+    <wire from="(1130,440)" to="(1260,440)"/>
+    <wire from="(1130,660)" to="(1370,660)"/>
+    <wire from="(1130,680)" to="(1390,680)"/>
+    <wire from="(1130,700)" to="(1340,700)"/>
+    <wire from="(1130,720)" to="(1330,720)"/>
+    <wire from="(1130,740)" to="(1320,740)"/>
+    <wire from="(1130,760)" to="(1410,760)"/>
+    <wire from="(1130,780)" to="(1430,780)"/>
+    <wire from="(1220,400)" to="(1220,590)"/>
+    <wire from="(1220,590)" to="(1260,590)"/>
+    <wire from="(1230,380)" to="(1230,600)"/>
+    <wire from="(1230,600)" to="(1270,600)"/>
+    <wire from="(1240,360)" to="(1240,610)"/>
+    <wire from="(1240,610)" to="(1280,610)"/>
+    <wire from="(1260,440)" to="(1260,520)"/>
+    <wire from="(1260,580)" to="(1260,590)"/>
+    <wire from="(1270,420)" to="(1270,520)"/>
+    <wire from="(1270,580)" to="(1270,600)"/>
+    <wire from="(1280,320)" to="(1280,520)"/>
+    <wire from="(1280,580)" to="(1280,610)"/>
+    <wire from="(1290,340)" to="(1290,520)"/>
+    <wire from="(130,210)" to="(130,360)"/>
+    <wire from="(130,210)" to="(160,210)"/>
+    <wire from="(130,360)" to="(570,360)"/>
+    <wire from="(1320,430)" to="(1320,520)"/>
+    <wire from="(1320,430)" to="(1430,430)"/>
+    <wire from="(1320,580)" to="(1320,740)"/>
+    <wire from="(1330,450)" to="(1330,520)"/>
+    <wire from="(1330,450)" to="(1410,450)"/>
+    <wire from="(1330,580)" to="(1330,720)"/>
+    <wire from="(1340,470)" to="(1340,520)"/>
+    <wire from="(1340,470)" to="(1370,470)"/>
+    <wire from="(1340,580)" to="(1340,700)"/>
+    <wire from="(1350,490)" to="(1350,520)"/>
+    <wire from="(1350,490)" to="(1390,490)"/>
+    <wire from="(1370,470)" to="(1370,660)"/>
+    <wire from="(1390,490)" to="(1390,680)"/>
+    <wire from="(140,230)" to="(140,500)"/>
+    <wire from="(140,230)" to="(160,230)"/>
+    <wire from="(140,500)" to="(570,500)"/>
+    <wire from="(1410,450)" to="(1410,760)"/>
+    <wire from="(1430,430)" to="(1430,780)"/>
+    <wire from="(150,250)" to="(150,640)"/>
+    <wire from="(150,250)" to="(160,250)"/>
+    <wire from="(150,640)" to="(570,640)"/>
+    <wire from="(160,1020)" to="(180,1020)"/>
+    <wire from="(160,1030)" to="(200,1030)"/>
+    <wire from="(160,1040)" to="(220,1040)"/>
+    <wire from="(160,1050)" to="(240,1050)"/>
+    <wire from="(160,1060)" to="(260,1060)"/>
+    <wire from="(160,1070)" to="(280,1070)"/>
+    <wire from="(160,1080)" to="(300,1080)"/>
+    <wire from="(160,1090)" to="(320,1090)"/>
+    <wire from="(160,270)" to="(160,780)"/>
+    <wire from="(160,780)" to="(570,780)"/>
+    <wire from="(180,430)" to="(180,1020)"/>
+    <wire from="(180,430)" to="(340,430)"/>
+    <wire from="(200,450)" to="(200,1030)"/>
+    <wire from="(200,450)" to="(340,450)"/>
+    <wire from="(220,570)" to="(220,1040)"/>
+    <wire from="(220,570)" to="(340,570)"/>
+    <wire from="(240,590)" to="(240,1050)"/>
+    <wire from="(240,590)" to="(340,590)"/>
+    <wire from="(260,710)" to="(260,1060)"/>
+    <wire from="(260,710)" to="(340,710)"/>
+    <wire from="(280,730)" to="(280,1070)"/>
+    <wire from="(280,730)" to="(340,730)"/>
+    <wire from="(300,850)" to="(300,1080)"/>
+    <wire from="(300,850)" to="(340,850)"/>
+    <wire from="(320,870)" to="(320,1090)"/>
+    <wire from="(320,870)" to="(340,870)"/>
+    <wire from="(380,170)" to="(450,170)"/>
+    <wire from="(380,190)" to="(520,190)"/>
+    <wire from="(380,210)" to="(540,210)"/>
+    <wire from="(380,230)" to="(410,230)"/>
+    <wire from="(380,250)" to="(400,250)"/>
+    <wire from="(40,190)" to="(110,190)"/>
+    <wire from="(40,190)" to="(40,220)"/>
+    <wire from="(400,250)" to="(400,290)"/>
+    <wire from="(400,290)" to="(410,290)"/>
+    <wire from="(450,80)" to="(450,170)"/>
+    <wire from="(50,170)" to="(90,170)"/>
+    <wire from="(520,80)" to="(520,190)"/>
+    <wire from="(540,210)" to="(540,290)"/>
+    <wire from="(560,210)" to="(620,210)"/>
+    <wire from="(560,220)" to="(630,220)"/>
+    <wire from="(560,230)" to="(640,230)"/>
+    <wire from="(560,240)" to="(650,240)"/>
+    <wire from="(560,250)" to="(660,250)"/>
+    <wire from="(560,260)" to="(670,260)"/>
+    <wire from="(560,270)" to="(680,270)"/>
+    <wire from="(560,280)" to="(690,280)"/>
+    <wire from="(560,390)" to="(570,390)"/>
+    <wire from="(560,530)" to="(570,530)"/>
+    <wire from="(560,670)" to="(570,670)"/>
+    <wire from="(560,810)" to="(570,810)"/>
+    <wire from="(570,360)" to="(570,390)"/>
+    <wire from="(570,500)" to="(570,530)"/>
+    <wire from="(570,640)" to="(570,670)"/>
+    <wire from="(570,780)" to="(570,810)"/>
+    <wire from="(620,210)" to="(620,670)"/>
+    <wire from="(620,670)" to="(870,670)"/>
+    <wire from="(630,220)" to="(630,650)"/>
+    <wire from="(630,650)" to="(880,650)"/>
+    <wire from="(640,230)" to="(640,630)"/>
+    <wire from="(640,630)" to="(890,630)"/>
+    <wire from="(650,240)" to="(650,610)"/>
+    <wire from="(650,610)" to="(900,610)"/>
+    <wire from="(660,250)" to="(660,380)"/>
+    <wire from="(660,380)" to="(910,380)"/>
+    <wire from="(670,260)" to="(670,360)"/>
+    <wire from="(670,360)" to="(910,360)"/>
+    <wire from="(680,270)" to="(680,340)"/>
+    <wire from="(680,340)" to="(910,340)"/>
+    <wire from="(690,280)" to="(690,320)"/>
+    <wire from="(690,320)" to="(910,320)"/>
+    <wire from="(870,670)" to="(870,720)"/>
+    <wire from="(870,720)" to="(910,720)"/>
+    <wire from="(880,650)" to="(880,700)"/>
+    <wire from="(880,700)" to="(910,700)"/>
+    <wire from="(890,630)" to="(890,680)"/>
+    <wire from="(890,680)" to="(910,680)"/>
+    <wire from="(90,170)" to="(160,170)"/>
+    <wire from="(90,170)" to="(90,390)"/>
+    <wire from="(90,390)" to="(340,390)"/>
+    <wire from="(90,390)" to="(90,530)"/>
+    <wire from="(90,530)" to="(340,530)"/>
+    <wire from="(90,530)" to="(90,670)"/>
+    <wire from="(90,670)" to="(340,670)"/>
+    <wire from="(90,670)" to="(90,810)"/>
+    <wire from="(90,810)" to="(340,810)"/>
+    <wire from="(900,610)" to="(900,660)"/>
+    <wire from="(900,660)" to="(910,660)"/>
+  </circuit>
+  <vhdl name="Intrare1">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_UNSIGNED.all;
+USE ieee.numeric_std.all;
+
+ENTITY Intrare1 IS
+
+  PORT (
+		Reset: in std_logic;
+        	CLK: in std_logic;
+        	s1,s2: in std_logic;
+        	intrare_1: out std_logic
+        );
+END Intrare1;
+
+ARCHITECTURE TypeArchitecture OF Intrare1 IS
+type state is (idle,st1,st2,st3,final);
+signal stare,nxstare:state := idle;
+signal senzor : std_logic_vector(1 downto 0);
+
+begin
+
+senzor(0) &lt;= s2;
+senzor(1) &lt;= s1;
+process(clk,reset)
+begin
+	if reset='1' then stare&lt;=idle;
+	else
+	if rising_edge(clk) then
+		stare&lt;=nxstare;
+	end if;
+	end if;
+end process;
+
+process(clk)
+  begin
+  if ( rising_edge(clk) ) then
+    	case stare is
+      when idle =&gt;
+        if ( senzor = "00" ) then
+          intrare_1 &lt;= '0';
+          nxstare &lt;= st1;
+        else
+          intrare_1 &lt;= '0';
+          nxstare &lt;= idle;
+        end if;
+
+      when st1 =&gt;
+        if ( senzor = "10" ) then
+          intrare_1 &lt;= '1';
+          nxstare &lt;= st2;
+        else
+          intrare_1 &lt;= '0';
+          nxstare &lt;= st1;
+        end if;
+
+      when st2 =&gt;
+        if ( senzor = "11" ) then
+          intrare_1 &lt;= '0';
+          nxstare &lt;= st3;
+        else
+          intrare_1 &lt;= '0';
+          nxstare &lt;= st2;
+        end if;
+
+      when st3 =&gt;
+        if ( senzor = "01" ) then
+        	intrare_1 &lt;= '0';
+          nxstare &lt;= final;
+        else
+          intrare_1 &lt;= '0';
+          nxstare &lt;= st3;
+        end if;
+
+      when final =&gt;
+        if ( senzor = "00" ) then
+          intrare_1 &lt;= '0';
+          nxstare &lt;= idle;
+        else
+          intrare_1 &lt;= '0';
+          nxstare &lt;= idle;
+        end if;
+      when others =&gt; intrare_1 &lt;= '0'; nxstare &lt;= idle;
+    end case;
+    end if;
+
+  end process;
+
+
+END TypeArchitecture;</vhdl>
+  <vhdl name="ssd">library ieee;
+use ieee.std_logic_1164.all;
+
+entity ssd is
+Port ( B0,B1,B2,B3 : in STD_LOGIC;
+A,B,C,D,E,F,G : out STD_LOGIC);
+end ssd;
+ 
+architecture Behavioral of ssd is
+ 
+begin
+ 
+A &lt;= B0 OR B2 OR (B1 AND B3) OR (NOT B1 AND NOT B3);
+B &lt;= (NOT B1) OR (NOT B2 AND NOT B3) OR (B2 AND B3);
+C &lt;= B1 OR NOT B2 OR B3;
+D &lt;= (NOT B1 AND NOT B3) OR (B2 AND NOT B3) OR (B1 AND NOT B2 AND B3) OR (NOT B1 AND B2) OR B0;
+E &lt;= (NOT B1 AND NOT B3) OR (B2 AND NOT B3);
+F &lt;= B0 OR (NOT B2 AND NOT B3) OR (B1 AND NOT B2) OR (B1 AND NOT B3);
+G &lt;= B0 OR (B1 AND NOT B2) OR ( NOT B1 AND B2) OR (B2 AND NOT B3);
+
+end architecture;</vhdl>
+  <vhdl name="Intrare2">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_UNSIGNED.all;
+USE ieee.numeric_std.all;
+
+ENTITY Intrare2 IS
+
+  PORT (
+		Reset: in std_logic;
+        	CLK: in std_logic;
+        	s1,s2: in std_logic;
+        	intrare_2: out std_logic
+        );
+END Intrare2;
+
+ARCHITECTURE TypeArchitecture OF Intrare2 IS
+type state is (idle,st1,st2,st3,final);
+signal stare,nxstare:state := idle;
+signal senzor : std_logic_vector(1 downto 0);
+
+begin
+
+senzor(0) &lt;= s2;
+senzor(1) &lt;= s1;
+process(clk,reset)
+begin
+	if reset='1' then stare&lt;=idle;
+	else
+	if rising_edge(clk) then
+		stare&lt;=nxstare;
+	end if;
+	end if;
+end process;
+
+process(clk)
+  begin
+  if ( rising_edge(clk) ) then
+    	case stare is
+      when idle =&gt;
+        if ( senzor = "00" ) then
+          intrare_2 &lt;= '0';
+          nxstare &lt;= st1;
+        else
+          intrare_2 &lt;= '0';
+          nxstare &lt;= idle;
+        end if;
+
+      when st1 =&gt;
+        if ( senzor = "10" ) then
+          intrare_2 &lt;= '1';
+          nxstare &lt;= st2;
+        else
+          intrare_2 &lt;= '0';
+          nxstare &lt;= st1;
+        end if;
+
+      when st2 =&gt;
+        if ( senzor = "11" ) then
+          intrare_2 &lt;= '0';
+          nxstare &lt;= st3;
+        else
+          intrare_2 &lt;= '0';
+          nxstare &lt;= st2;
+        end if;
+
+      when st3 =&gt;
+        if ( senzor = "01" ) then
+          intrare_2 &lt;= '0';
+          nxstare &lt;= final;
+        else
+          intrare_2 &lt;= '0';
+          nxstare &lt;= st3;
+        end if;
+
+      when final =&gt;
+        if ( senzor = "00" ) then
+          intrare_2 &lt;= '0';
+          nxstare &lt;= idle;
+        else
+          intrare_2 &lt;= '0';
+          nxstare &lt;= idle;
+        end if;
+      when others =&gt; intrare_2 &lt;= '0'; nxstare &lt;= idle;
+    end case;
+    end if;
+
+  end process;
+
+
+END TypeArchitecture;</vhdl>
+  <vhdl name="Iesire1">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_UNSIGNED.all;
+USE ieee.numeric_std.all;
+
+ENTITY Iesire1 IS
+
+  PORT (
+		Reset: in std_logic;
+        	CLK: in std_logic;
+        	s1,s2: in std_logic;
+        	iesire_1: out std_logic
+        );
+END Iesire1;
+
+ARCHITECTURE TypeArchitecture OF Iesire1 IS
+type state is (idle,st1,st2,st3,final);
+signal stare,nxstare:state := idle;
+signal senzor : std_logic_vector(1 downto 0);
+
+begin
+
+senzor(0) &lt;= s2;
+senzor(1) &lt;= s1;
+process(clk,reset)
+begin
+	if reset='1' then stare&lt;=idle;
+	else
+	if rising_edge(clk) then
+		stare&lt;=nxstare;
+	end if;
+	end if;
+end process;
+
+process(clk)
+  begin
+  if ( rising_edge(clk) ) then
+    	case stare is
+      when idle =&gt;
+        if ( senzor = "00" ) then
+          iesire_1 &lt;= '0';
+          nxstare &lt;= st1;
+        else
+          iesire_1 &lt;= '0';
+          nxstare &lt;= idle;
+        end if;
+
+      when st1 =&gt;
+        if ( senzor = "10" ) then
+          iesire_1 &lt;= '1';
+          nxstare &lt;= st2;
+        else
+          iesire_1 &lt;= '0';
+          nxstare &lt;= st1;
+        end if;
+
+      when st2 =&gt;
+        if ( senzor = "11" ) then
+          iesire_1 &lt;= '0';
+          nxstare &lt;= st3;
+        else
+          iesire_1 &lt;= '0';
+          nxstare &lt;= st2;
+        end if;
+
+      when st3 =&gt;
+        if ( senzor = "01" ) then
+          iesire_1 &lt;= '0';
+          nxstare &lt;= final;
+        else
+          iesire_1 &lt;= '0';
+          nxstare &lt;= st3;
+        end if;
+
+      when final =&gt;
+        if ( senzor = "00" ) then
+          iesire_1 &lt;= '0';
+          nxstare &lt;= idle;
+        else
+          iesire_1 &lt;= '0';
+          nxstare &lt;= idle;
+        end if;
+      when others =&gt; iesire_1 &lt;= '0'; nxstare &lt;= idle;
+    end case;
+    end if;
+
+  end process;
+
+
+END TypeArchitecture;</vhdl>
+  <vhdl name="Iesire2">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_UNSIGNED.all;
+USE ieee.numeric_std.all;
+
+ENTITY Iesire2 IS
+
+  PORT (
+		Reset: in std_logic;
+        	CLK: in std_logic;
+        	s1,s2: in std_logic;
+        	iesire_2: out std_logic
+        );
+END Iesire2;
+
+ARCHITECTURE TypeArchitecture OF Iesire2 IS
+type state is (idle,st1,st2,st3,final);
+signal stare,nxstare:state := idle;
+signal senzor : std_logic_vector(1 downto 0);
+
+begin
+
+senzor(0) &lt;= s2;
+senzor(1) &lt;= s1;
+process(clk,reset)
+begin
+	if reset='1' then stare&lt;=idle;
+	else
+	if rising_edge(clk) then
+		stare&lt;=nxstare;
+	end if;
+	end if;
+end process;
+
+process(clk)
+  begin
+  if ( rising_edge(clk) ) then
+    	case stare is
+      when idle =&gt;
+        if ( senzor = "00" ) then
+          iesire_2 &lt;= '0';
+          nxstare &lt;= st1;
+        else
+          iesire_2 &lt;= '0';
+          nxstare &lt;= idle;
+        end if;
+
+      when st1 =&gt;
+        if ( senzor = "10" ) then
+          iesire_2 &lt;= '1';
+          nxstare &lt;= st2;
+        else
+          iesire_2 &lt;= '0';
+          nxstare &lt;= st1;
+        end if;
+
+      when st2 =&gt;
+        if ( senzor = "11" ) then
+          iesire_2 &lt;= '0';
+          nxstare &lt;= st3;
+        else
+          iesire_2 &lt;= '0';
+          nxstare &lt;= st2;
+        end if;
+
+      when st3 =&gt;
+        if ( senzor = "01" ) then
+          iesire_2 &lt;= '0';
+          nxstare &lt;= final;
+        else
+          iesire_2 &lt;= '0';
+          nxstare &lt;= st3;
+        end if;
+
+      when final =&gt;
+        if ( senzor = "00" ) then
+          iesire_2 &lt;= '0';
+          nxstare &lt;= idle;
+        else
+          iesire_2 &lt;= '0';
+          nxstare &lt;= idle;
+        end if;
+      when others =&gt; iesire_2 &lt;= '0'; nxstare &lt;= idle;
+    end case;
+    end if;
+
+  end process;
+
+
+END TypeArchitecture;</vhdl>
+  <vhdl name="Unitate_de_control">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+USE ieee.std_logic_unsigned.all;
+
+ENTITY Unitate_de_control IS
+  PORT (
+    reset       : in  std_logic;
+    clock       : in  std_logic;
+    intrare_1   : in  std_logic;
+    intrare_2   : in  std_logic;
+    iesire_1    : in  std_logic;
+    iesire_2    : in  std_logic;
+    full        : out std_logic;
+    empty       : out std_logic;
+    p_counter   : out std_logic_vector(7 downto 0);
+    parking_in : out std_logic; 
+    parking_out : out std_logic  
+  );
+END Unitate_de_control;
+
+ARCHITECTURE TypeArchitecture OF Unitate_de_control IS
+
+  SIGNAL counter : std_logic_vector(7 downto 0) := "00110000"; 
+
+BEGIN
+
+process(intrare_1, intrare_2, iesire_1, iesire_2, reset)
+  begin
+  	if ( reset = '1' ) then 
+  		counter &lt;= "00110000";
+  	else
+  		if ( intrare_1 = '1' or intrare_2 = '1' ) then
+  			if (  counter &gt; "00000000"  ) then
+				if ( counter( 3 downto 0 ) = "0000" ) then
+					counter( 3 downto 0 ) &lt;= "1001";
+					counter( 7 downto 4 ) &lt;= counter( 7 downto 4 ) - 1;
+				else
+					counter &lt;= counter - 1;
+				end if;
+			end if;
+  		end if;
+  		 if ( iesire_1 = '1' or iesire_2 = '1' ) then
+  			if (  counter &lt; "00110000"  ) then
+				if ( counter( 3 downto 0 ) = "1001" ) then
+					counter( 3 downto 0 ) &lt;= "0000";
+					counter( 7 downto 4 ) &lt;= counter( 7 downto 4 ) + 1;
+				else
+					counter &lt;= counter + 1;
+				end if;
+  			end if;
+		end if;
+
+	    p_counter &lt;= counter;
+	    
+	    if counter = "00000000" then  
+	      full &lt;= '1';
+	      empty &lt;= '0';
+	    elsif counter = "00110000" then 
+	      full &lt;= '0';
+	      empty &lt;= '1';
+	    else
+	      full &lt;= '0';
+	      empty &lt;= '0';
+	    end if;
+	
+	    
+	    if ( intrare_1 = '1' or intrare_2 = '1' ) then
+	      parking_in &lt;= '1'; 
+	    else
+	      parking_in &lt;= '0'; 
+	    end if;
+	
+	    if ( iesire_1 = '1' or iesire_2 = '1' ) then
+	      parking_out &lt;= '1'; 
+	    else
+	      parking_out &lt;= '0'; 
+	    end if;
+    end if;
+end process;
+
+END TypeArchitecture;</vhdl>
+</project>
